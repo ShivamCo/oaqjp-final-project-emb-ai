@@ -1,0 +1,13 @@
+from flask import Flask
+from EmotionDetection.emotion_detection import emotion_detector
+
+app = Flask(__name__)
+
+@app.route('/emotionDetector')
+def emotion_det():
+
+    res = emotion_detector('I love my life')
+    return res
+
+if __name__ == '__main__':
+    app.run()
