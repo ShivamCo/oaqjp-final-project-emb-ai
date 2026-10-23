@@ -22,3 +22,4 @@ class test_emotion_detection(unittest.TestCase):
 
 
 unittest.main()
+

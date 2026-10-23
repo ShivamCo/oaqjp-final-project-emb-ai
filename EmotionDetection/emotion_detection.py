@@ -27,3 +27,5 @@ def emotion_detector(text_to_analyze):
         "sadness": None, 
         "dominant_emotion":None
             }
+
+        return emotion_not_found

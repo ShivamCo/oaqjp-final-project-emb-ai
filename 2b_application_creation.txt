@@ -6,5 +6,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 {"emotionPredictions":[{"emotion":{"anger":0.6674731, "disgust":0.022848725, "fear":0.09749009, "joy":0.011863918, "sadness":0.1953058}, "target":"", "emotionMentions":[{"span":{"begin":0, "end":26, "text":"I am really mad about this"}, "emotion":{"anger":0.6674731, "disgust":0.022848725, "fear":0.09749009, "joy":0.011863918, "sadness":0.1953058}}]}], "producerId":{"name":"Ensemble Aggregated Emotion Workflow", "version":"0.0.1"}}
 >>> exit()
 theia@theiadocker-shivamsingh9:/home/project/final_project$ python3 test_emotion_detection.py
-python3: can't open file '/home/project/final_project/test_emotion_detection.py': [Errno 2] No such file or directory
 theia@theiadocker-shivamsingh9:/home/project/final_project$ 
