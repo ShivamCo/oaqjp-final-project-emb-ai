@@ -6,6 +6,8 @@ def emotion_detector(text_to_analyze):
     header= {"grpc-metadata-mm-model-id": "emotion_aggregated-workflow_lang_en_stock"}
     input_json= { "raw_document": { "text": text_to_analyze } }
 
+    if not text_to_analyze or not text_to_analyze.strip():
+        return 'Invalid text! Please try again!.'
     
     res = requests.post(url, headers=header, json=input_json ) 
     if res.status_code == 200:

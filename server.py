@@ -12,7 +12,7 @@ def emotion_det():
     which takes paragraph and detects emotions and
     return emotion stats.
      """
-    res = emotion_detector('I')
+    res = emotion_detector('')
     return res
 
 
