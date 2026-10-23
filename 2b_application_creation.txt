@@ -1,10 +1,2 @@
-import requests
-import json
-
-def emotion_detector(text_to_analyze):
-    url= 'https://sn-watson-emotion.labs.skills.network/v1/watson.runtime.nlp.v1/NlpService/EmotionPredict'
-    header= {"grpc-metadata-mm-model-id": "emotion_aggregated-workflow_lang_en_stock"}
-    input_json= { "raw_document": { "text": text_to_analyze } }
-
-    res = requests.post(url, headers=header, json=input_json ) 
-    return json.loads(res.text)
+theia@theiadocker-shivamsingh9:/home/project/final_project$ cum$ curl "htt "localhost:5000/emotionDetector"r"
+{"emotionPredictions":[{"emotion":{"anger":0.06755598, "disgust":0.04010958, "fear":0.10141187, "joy":0.29300702, "sadness":0.19609329}, "target":"", "emotionMentions":[{"span":{"begin":0, "end":1, "text":"I"}, "emotion":{"anger":0.06755598, "disgust":0.04010958, "fear":0.10141187, "joy":0.29300702, "sadness":0.19609329}}]}], "producerId":{"name":"Ensemble Aggregated Emotion Workflow", "version":"0.0.1"}}
